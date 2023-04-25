@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wasatch 100 Race Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Wasatch 100 Race Calculator</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <form id="timeForm" onsubmit="return processForm(event)">
+	        <table>
+	    		<tr>
+	    			<th><label for="aid">Average Aid Station Time:</label></th>
+	    			<td><input type="text" id="aid" name="aid" value="05:00" pattern="^(?:[0-5]\d):(?:[0-5]\d)$" required></td>
+				</tr>
+				<tr>
+	    			<th><label for="running">Average Running Pace:</label>
+	       			<td><input type="text" id="running" name="running" value="10:00" pattern="^(?:[0-5]\d):(?:[0-5]\d)$" required></td>
+				</tr>
+	        	<tr>
+	    			<th><label for="walking">Average Power Walking Pace:</label>
+	        		<td><input type="text" id="walking" name="walking" value="20:00" pattern="^(?:[0-5]\d):(?:[0-5]\d)$" required></td>
+				</tr>
+	        	<tr>
+	                <td colspan="2"><button type="submit">Calculate Race Time</button></td>
+	            </tr>
+	            <tr>
+	                <td colspan="2" id="output"></td>
+	            </tr>
+        	</table>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
